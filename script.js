@@ -43,14 +43,14 @@ $(document).ready(function() {
     // ゲームロジック
     if (gameImage) {
         const images = [
-            'https://imgur.com/uERYh1B.png',
-            'https://imgur.com/JfprM8Z.png',
-            'https://imgur.com/6qgzSiy.png',
-            'https://imgur.com/JTjOHZy.png',
-            'https://imgur.com/1ZPcM90.png',
-            'https://imgur.com/5XhVxv2.png',
-            'https://imgur.com/HwGebHa.png',
-            'https://imgur.com/1csQCvL.png' // 負け画像
+            'image1.png',
+            'image2.png',
+            'image3.png',
+            'image4.png',
+            'image5.png',
+            'image6.png',
+            'image7.png',
+            'lose.png' // 負け画像
         ];
 
         gameImage.addEventListener('click', function() {
@@ -58,7 +58,7 @@ $(document).ready(function() {
             const selectedImage = images[randomIndex];
             gameImage.src = selectedImage;
 
-            if (selectedImage === 'https://imgur.com/1csQCvL.png') {
+            if (selectedImage === 'lose.png') {
                 const penalties = JSON.parse(sessionStorage.getItem('penalties')) || ['ウイスキー'];
                 const randomPenaltyIndex = Math.floor(Math.random() * penalties.length);
                 message.innerHTML = '<span class="out">OUT!!!</span><br>' + penalties[randomPenaltyIndex];
