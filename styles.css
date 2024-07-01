@@ -154,7 +154,7 @@ li button:hover {
 .message {
     font-size: 40px; /* SAFEとOUTの文字サイズを大きくする */
     position: absolute; /* 絶対位置に変更 */
-    top: 58%; /* 上から60%の位置に配置 */
+    top: 56%; /* 上から60%の位置に配置 */
     left: 50%; /* 左から50%の位置に配置 */
     transform: translate(-50%, -50%); /* 完全に中央に配置 */
     width: 100%; /* 幅を100%に設定 */
